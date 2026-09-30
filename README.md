@@ -40,7 +40,8 @@ bash install.sh
 ```
 
 The installer drops the three skills into `~/.claude/skills/`. Any skill of the same
-name already there is backed up first (renamed to `name.bak-<timestamp>`), never
+name already there is backed up first to `~/.claude/skills-backup/<name>-<timestamp>/`
+(outside the skills folder, so old copies never load as duplicate skills), never
 overwritten silently. Then restart Claude Code so it picks them up.
 
 ## What's inside

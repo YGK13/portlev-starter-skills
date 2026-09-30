@@ -9,7 +9,7 @@ description: >-
   and site MVP, red-team it, and package a recap - then optionally productize
   into a deployed, secure SaaS. Triggers on "build me a company", "autonomous
   company builder", "run the company builder", "take this idea to market",
-  "/build-a-company", or any request to design and ship a business from
+  or any request to design and ship a business from
   scratch. Money-first: every option is ranked by expected revenue in 30 days
   (ER30) against a NAMED, reachable buyer.
 metadata:
@@ -27,6 +27,12 @@ the packaged, reusable version of a full end-to-end run.
 intelligence on planning, adversarial review and verification, and you fan out
 cheap parallel workers (the `Workflow` tool) for research, tournaments and
 red-teaming. Never rush to output. Everything passes the five gates in Gate 0.
+
+> **If the `Workflow` tool is unavailable** (it isn't in every Claude Code
+> environment or plan), fan out the same workers as parallel subagents with the
+> `Agent` tool, one per angle. If neither is available, run the angles
+> sequentially yourself. Everywhere this skill says `Workflow`, apply this
+> fallback. The gates and outputs are the same; only the speed changes.
 
 ## Gate 0 — Operating discipline (self-contained)
 Run this entire workflow under five gates, in order: **Scope → Evidence →

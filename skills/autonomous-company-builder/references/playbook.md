@@ -1,7 +1,9 @@
 # Company Builder — Detailed Playbook
 
 Load per-phase as you run it. Orchestration uses the `Workflow` tool (parallel /
-pipeline fan-out) with the orchestrator integrating + verifying.
+pipeline fan-out) with the orchestrator integrating + verifying. If `Workflow`
+isn't available, use parallel `Agent` subagents instead, or run the angles
+sequentially if neither is available.
 
 ## Phase 1 — Pain hunt (parallel, sourced)
 Fan out one researcher per angle/community. Each returns structured candidates,
